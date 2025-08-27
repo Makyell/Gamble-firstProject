@@ -16,7 +16,7 @@ public class Main {
 
             System.out.println("You Have " + cash + "$");
 
-            for (int i = 0; 3 > i; i++) {
+            for (int i = 0; true; i++) {
                 System.out.print("Guess the random number from 1 to 10: ");
                 int userNumber = scanner.nextInt();
 
