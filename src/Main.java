@@ -8,7 +8,7 @@ public class Main {
 
 
         Scanner scanner = new Scanner(System.in);
-        int cash = 10;
+        int cash = 3;
 
         while (cash > 0 && cash <= 10) {
 
@@ -22,9 +22,9 @@ public class Main {
 
                 if (userNumber == secretNumber) {
                     System.out.println(GREEN + "You win!" + RESET);
-                    cash += 5;
+                    cash += 1;
                     String win;
-                    if (cash == 15) {
+                    if (cash == 5) {
                         win = ", so you've won the game";
                     } else {
                         win = "";
@@ -36,7 +36,7 @@ public class Main {
                 } else if (1 == i) {
                     System.out.println("You guessed wrong, you have " + 1 + " more attempt");
                 } else {
-                    cash -= 5;
+                    cash -= 1;
                     String lose;
                     if (cash == 0) {
                         lose = "You're too poor to play the game again (0$)";
@@ -44,7 +44,7 @@ public class Main {
                         lose = "";
                     }
                     System.out.println(RED + "You lose! The number was " + secretNumber + RESET);
-                    System.out.println(lose);
+                    System.out.print(lose);
                     break;
                 }
             }
